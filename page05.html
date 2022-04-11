@@ -39,17 +39,20 @@
             // Testa se usuário e senha estão corretos
             if (
                 // Primeira expressão
-                formUsuario == loginUsuario
+                formUsuario == loginUsuario //true
 
                 // AND
                 &&
 
                 // Segunda expressão
-                formSenha == loginSenha
+                formSenha == loginSenha //true
             ) {
-                console.log('usuario ok.')
+
+                // Escreve na caixa de mensagem
+                mensagem.innerHTML = "Olá " + formUsuario + "! Seja bem-vindo!";
+
             } else {
-                console.error('oooops!');
+                mensagem.innerHTML = "Oooops! Algo errado não deu certo";
             }
 
 
@@ -57,7 +60,6 @@
             // Não faça mais nada.
             return false;
         }
-
     </script>
 
 </body>
